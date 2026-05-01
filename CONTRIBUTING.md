@@ -55,12 +55,12 @@ $ cd kathan-sdk
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link kathan
+$ yarn link @alchemystai/kathan
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link --global kathan
+$ pnpm link --global @alchemystai/kathan
 ```
 
 ## Running tests

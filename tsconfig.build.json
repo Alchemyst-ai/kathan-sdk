@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "kathan/*": ["./dist/src/*"],
-      "kathan": ["./dist/src/index.ts"]
+      "@alchemystai/kathan/*": ["./dist/src/*"],
+      "@alchemystai/kathan": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Kathan from 'kathan';
+import Kathan from '@alchemystai/kathan';
 
 const client = new Kathan({
   apiKey: 'My API Key',

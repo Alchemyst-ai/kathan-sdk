@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "kathan/*": ["./src/*"],
-      "kathan": ["./src/index.ts"]
+      "@alchemystai/kathan/*": ["./src/*"],
+      "@alchemystai/kathan": ["./src/index.ts"]
     },
     "noEmit": true,
 

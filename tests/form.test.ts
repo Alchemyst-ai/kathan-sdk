@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'kathan/internal/uploads';
-import { toFile } from 'kathan/core/uploads';
+import { multipartFormRequestOptions, createForm } from '@alchemystai/kathan/internal/uploads';
+import { toFile } from '@alchemystai/kathan/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
