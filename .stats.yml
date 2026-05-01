@@ -1,4 +1,4 @@
 configured_endpoints: 3
-openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/alchemyst-ai/kathan-b7d31d78d32a8595039f31587e295f7f6f2cc5ab154d4b16acbe96b68a77060c.yml
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/alchemyst-ai/kathan-dcc7561c28aae3f49af842ea571f1fbd23bae5dd243cbe224eea1a23cd95fb3e.yml
 openapi_spec_hash: 3adec37805227fdb9551188b5435979b
-config_hash: 4f344a32971e753fcd0b27de230029ff
+config_hash: da0808193330c651a6dec23cdb7d8f65
