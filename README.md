@@ -26,7 +26,7 @@ The full API of this library can be found in [api.md](api.md).
 import Kathan from '@alchemystai/kathan';
 
 const client = new Kathan({
-  apiKey: process.env['KATHAN_API_KEY'], // This is the default and can be omitted
+  apiKey: process.env['ALCHEMYST_AI_API_KEY'], // This is the default and can be omitted
 });
 
 const response = await client.health.check();
@@ -43,7 +43,7 @@ This library includes TypeScript definitions for all request params and response
 import Kathan from '@alchemystai/kathan';
 
 const client = new Kathan({
-  apiKey: process.env['KATHAN_API_KEY'], // This is the default and can be omitted
+  apiKey: process.env['ALCHEMYST_AI_API_KEY'], // This is the default and can be omitted
 });
 
 const response: Kathan.HealthCheckResponse = await client.health.check();
