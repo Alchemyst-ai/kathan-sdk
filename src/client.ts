@@ -130,7 +130,7 @@ export class Kathan {
    * API Client for interfacing with the Kathan API.
    *
    * @param {string | null | undefined} [opts.apiKey=process.env['KATHAN_API_KEY'] ?? null]
-   * @param {string} [opts.baseURL=process.env['KATHAN_BASE_URL'] ?? http://localhost:8000] - Override the default base URL for the API.
+   * @param {string} [opts.baseURL=process.env['KATHAN_BASE_URL'] ?? https://kathan-backend.getalchemystai.com] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
    * @param {Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.
@@ -146,7 +146,7 @@ export class Kathan {
     const options: ClientOptions = {
       apiKey,
       ...opts,
-      baseURL: baseURL || `http://localhost:8000`,
+      baseURL: baseURL || `https://kathan-backend.getalchemystai.com`,
     };
 
     this.baseURL = options.baseURL!;
@@ -204,7 +204,7 @@ export class Kathan {
    * Check whether the base URL is set to its default.
    */
   #baseURLOverridden(): boolean {
-    return this.baseURL !== 'http://localhost:8000';
+    return this.baseURL !== 'https://kathan-backend.getalchemystai.com';
   }
 
   protected defaultQuery(): Record<string, string | undefined> | undefined {
