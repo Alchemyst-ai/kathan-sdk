@@ -322,13 +322,13 @@ describe('instantiate client', () => {
     test('empty env variable', () => {
       process.env['KATHAN_BASE_URL'] = ''; // empty
       const client = new Kathan({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('https://kathan-backend.getalchemystai.com');
+      expect(client.baseURL).toEqual('https://kathan-webrtc.getalchemystai.com');
     });
 
     test('blank env variable', () => {
       process.env['KATHAN_BASE_URL'] = '  '; // blank
       const client = new Kathan({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('https://kathan-backend.getalchemystai.com');
+      expect(client.baseURL).toEqual('https://kathan-webrtc.getalchemystai.com');
     });
 
     test('in request options', () => {
