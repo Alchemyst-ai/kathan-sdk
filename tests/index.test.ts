@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'kathan/core/api-promise';
+import { APIPromise } from '@alchemystai/kathan/core/api-promise';
 
 import util from 'node:util';
-import Kathan from 'kathan';
-import { APIUserAbortError } from 'kathan';
+import Kathan from '@alchemystai/kathan';
+import { APIUserAbortError } from '@alchemystai/kathan';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {
@@ -322,13 +322,13 @@ describe('instantiate client', () => {
     test('empty env variable', () => {
       process.env['KATHAN_BASE_URL'] = ''; // empty
       const client = new Kathan({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('http://localhost:8000');
+      expect(client.baseURL).toEqual('https://kathan-webrtc.getalchemystai.com');
     });
 
     test('blank env variable', () => {
       process.env['KATHAN_BASE_URL'] = '  '; // blank
       const client = new Kathan({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('http://localhost:8000');
+      expect(client.baseURL).toEqual('https://kathan-webrtc.getalchemystai.com');
     });
 
     test('in request options', () => {
@@ -441,14 +441,14 @@ describe('instantiate client', () => {
 
   test('with environment variable arguments', () => {
     // set options via env var
-    process.env['KATHAN_API_KEY'] = 'My API Key';
+    process.env['ALCHEMYST_AI_API_KEY'] = 'My API Key';
     const client = new Kathan();
     expect(client.apiKey).toBe('My API Key');
   });
 
   test('with overridden environment variable arguments', () => {
     // set options via env var
-    process.env['KATHAN_API_KEY'] = 'another My API Key';
+    process.env['ALCHEMYST_AI_API_KEY'] = 'another My API Key';
     const client = new Kathan({ apiKey: 'My API Key' });
     expect(client.apiKey).toBe('My API Key');
   });

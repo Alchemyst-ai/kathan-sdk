@@ -42,25 +42,25 @@ If you’d like to use the repository from source, you can either install from g
 To install via git:
 
 ```sh
-$ npm install git+ssh://git@github.com:stainless-sdks/kathan-typescript.git
+$ npm install git+ssh://git@github.com:Alchemyst-ai/kathan-sdk.git
 ```
 
 Alternatively, to link a local copy of the repo:
 
 ```sh
 # Clone
-$ git clone https://www.github.com/stainless-sdks/kathan-typescript
-$ cd kathan-typescript
+$ git clone https://www.github.com/Alchemyst-ai/kathan-sdk
+$ cd kathan-sdk
 
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link kathan
+$ yarn link @alchemystai/kathan
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link --global kathan
+$ pnpm link --global @alchemystai/kathan
 ```
 
 ## Running tests
