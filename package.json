@@ -1,6 +1,6 @@
 {
   "name": "@alchemystai/kathan",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The official TypeScript library for the Kathan API",
   "author": "Kathan <anuran@getalchemystai.com>",
   "types": "dist/index.d.ts",
